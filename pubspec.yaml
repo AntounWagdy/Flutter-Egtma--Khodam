@@ -1,0 +1,59 @@
+name: egtma3_5odam
+description: A new Flutter application.
+
+dependencies:
+  mailer: ^1.1.4
+  flutter_youtube: ^1.1.1
+
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl:
+  intl_translation:
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://www.dartlang.org/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/logo.png
+    - assets/images/env1.png
+    - assets/images/env2.png
+    - assets/images/env3.png
+    - assets/images/bg.jpg
+    - assets/images/SplashScreen.jpg
+    - assets/images/seal.png
+    - assets/images/bg2.png
+    - assets/images/DrawerBG.jpg
+    - assets/images/time.png
+    - assets/images/pray.png
+    - assets/images/Book1.png
+    - assets/images/Book2.png
+    - assets/images/Book3.png
+    - assets/images/Book4.png
+    - assets/images/Book5.png
+    - assets/images/Book5.png
+    - assets/images/drink.png
+    - assets/images/eat.png
+    - assets/images/eat2.png
+    - assets/images/hrof.png
+    - assets/images/music.png
+    - assets/images/music2.png
