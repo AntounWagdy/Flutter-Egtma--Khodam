@@ -15,7 +15,7 @@ class Taranem extends StatelessWidget {
                     fit: BoxFit.cover),
               ),
               child: this.getMyMawade3Screen(context)),
-          appBar: Utils.MyAppBar("الترانيم", 0),
+          appBar: Utils.MyAppBar("الترانيم", 0,context),
         ));
   }
 

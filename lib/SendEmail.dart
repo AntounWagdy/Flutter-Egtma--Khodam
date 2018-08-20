@@ -20,7 +20,7 @@ class _MyCustomFromState extends State<SendEmail>{
                     fit: BoxFit.cover),
               ),
               child: this.getMyMawade3Screen(context)),
-          appBar: Utils.MyAppBar("بريد الخدام", 0),
+          appBar: Utils.MyAppBar("بريد الخدام", 0,context),
         ));
   }
 

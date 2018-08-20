@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
  @override
   Widget build (BuildContext context) {
 
-    AppBar myAppBar = Utils.MyAppBar("إجتماع الخدام",0);
+    AppBar myAppBar = Utils.MyAppBar("إجتماع الخدام",0,context);
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(

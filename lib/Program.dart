@@ -19,7 +19,7 @@ class Program extends StatelessWidget {
                     fit: BoxFit.cover),
               ),
               child: this.getMySecondScreen(context)),
-          appBar: Utils.MyAppBar("برنامج المؤتمر",0),
+          appBar: Utils.MyAppBar("برنامج المؤتمر",0,context),
         ));
   }
 
@@ -119,7 +119,7 @@ class Program extends StatelessWidget {
           getListChild("عشيه","6:00 ~ 6:30",Utils.pray,context),
           getListChild("الشعار","6:30 ~ 6:45", Utils.music,context),
           getListChild("مقدمة تاريخية","6:45 ~ 7:30",Utils.hrof ,context),
-          getListChild("فترة حرة","7:30 ~ 8:30", Utils.seal,context),
+          getListChild("فترة حرة","7:30 ~ 8:30", Utils.Break,context),
           getListChild("عشاء","8:30 ~ 10:00", Utils.eat,context),
 
           Container(height: 16.0,),
@@ -157,7 +157,7 @@ class Program extends StatelessWidget {
           getListChild("شاى","10:00 ~ 10:30",Utils.drink,context),
           getListChild("شخصية حزقيال النبى","11:00 ~ 12:00",Utils.Book2,context),
           getListChild("صلاة ختام المؤتمر","12:00",Utils.pray,context),
-          getListChild("تسليم الغرف","1:00",Utils.seal,context),
+          getListChild("تسليم الغرف","1:00",Utils.Break,context),
           getListChild("غذاء","2:00",Utils.eat,context),
 
 
@@ -170,7 +170,7 @@ class Program extends StatelessWidget {
           getListChild("عشيه","6:00 ~ 6:30",Utils.pray,context),
           getListChild("الشعار","6:30 ~ 6:45", Utils.music,context),
           getListChild("مقدمة تاريخية","6:45 ~ 7:30",Utils.hrof ,context),
-          getListChild("فترة حرة","7:30 ~ 8:30", Utils.seal,context),
+          getListChild("فترة حرة","7:30 ~ 8:30", Utils.Break,context),
           getListChild("عشاء","8:30 ~ 10:00", Utils.eat,context),
 
           Container(height: 16.0,),
@@ -215,7 +215,7 @@ class Program extends StatelessWidget {
           getListChild("شاى","10:00 ~ 10:30",Utils.drink,context),
           getListChild("شخصية حزقيال النبى","11:00 ~ 12:00",Utils.Book2,context),
           getListChild("صلاة ختام المؤتمر","12:00",Utils.pray,context),
-          getListChild("تسليم الغرف","1:00",Utils.seal,context),
+          getListChild("تسليم الغرف","1:00",Utils.Break,context),
           getListChild("غذاء","2:00",Utils.eat,context),
         ],
       );

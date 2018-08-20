@@ -14,7 +14,7 @@ class Mola5as_Sefr extends StatelessWidget{
                     fit: BoxFit.cover),
               ),
               child: this.getMyMawade3Screen(context)),
-          appBar: Utils.MyAppBar("مثل عود الكرم",0),
+          appBar: Utils.MyAppBar("مثل عود الكرم",0,context),
         ));
 
   }
@@ -109,7 +109,7 @@ class Mola5as_Sefr extends StatelessWidget{
       padding: const EdgeInsets.only(right: 40.0),
       child: new RichText(text: new TextSpan(text: s,style: TextStyle(
           fontWeight: FontWeight.w700,
-          fontSize: 20.0,color: Colors.red),children:<TextSpan>[TextSpan(text:t ,style:TextStyle(
+          fontSize: 20.0,color: Utils.MyTextColor),children:<TextSpan>[TextSpan(text:t ,style:TextStyle(
           fontWeight: FontWeight.w300,
           fontSize: 20.0,color: Colors.black) )]),textDirection: TextDirection.rtl,),
     );

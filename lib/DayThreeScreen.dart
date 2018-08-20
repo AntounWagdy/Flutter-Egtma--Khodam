@@ -17,7 +17,7 @@ class DayThreeScreen extends StatelessWidget {
                     fit: BoxFit.cover),
               ),
               child: this.getMySecondScreen(context)),
-          appBar: Utils.MyAppBar("اليوم الثالث", 0),
+          appBar: Utils.MyAppBar("اليوم الثالث", 0,context),
         ));
   }
 

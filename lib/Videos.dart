@@ -21,7 +21,7 @@ class _VideoState extends State<Videos> {
                     fit: BoxFit.cover),
               ),
               child: this.getMyMawade3Screen(context)),
-          appBar: Utils.MyAppBar("مثل عود الكرم", 0),
+          appBar: Utils.MyAppBar("مثل عود الكرم", 0,context),
         ));
   }
 
@@ -53,7 +53,7 @@ class _VideoState extends State<Videos> {
         else{
           youtube.playYoutubeVideoById(
             apiKey: "AIzaSyABWU6ihkSSFKhG4ef6pl2s4DSDiP_I2O4",
-            videoId: "PBxqAU0LWgo",
+            videoId: "EKh_U2NnIs8",
               autoPlay: true,
               fullScreen: true
           );
@@ -88,11 +88,26 @@ class _VideoState extends State<Videos> {
       ),
     );
 
-    // TODO: Copy the code of the above gesture detector here
-
     final planetThumbnail = GestureDetector(
       onTap: () {
+        var youtube = new FlutterYoutube();
 
+        if(text=="رؤيا العظام اليابسة"){
+          youtube.playYoutubeVideoById(
+              apiKey: "AIzaSyABWU6ihkSSFKhG4ef6pl2s4DSDiP_I2O4",
+              videoId: "-YsVzzay67c",
+              autoPlay: true,
+              fullScreen: true
+          );
+        }
+        else{
+          youtube.playYoutubeVideoById(
+              apiKey: "AIzaSyABWU6ihkSSFKhG4ef6pl2s4DSDiP_I2O4",
+              videoId: "PBxqAU0LWgo",
+              autoPlay: true,
+              fullScreen: true
+          );
+        }
       },
       child: Container(
         margin: new EdgeInsets.symmetric(vertical: 16.0),

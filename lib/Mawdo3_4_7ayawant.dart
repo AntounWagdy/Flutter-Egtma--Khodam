@@ -14,7 +14,7 @@ class Mawdo3_4_7ayawant extends StatelessWidget {
                     fit: BoxFit.cover),
               ),
               child: this.getMyMawade3Screen(context)),
-          appBar: Utils.MyAppBar("الكائنات الأربعة غير المتجسدين",1.0),
+          appBar: Utils.MyAppBar("الكائنات الأربعة غير المتجسدين",1.0,context),
         ));
   }
 

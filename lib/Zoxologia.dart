@@ -14,7 +14,7 @@ class Zoxologia extends StatelessWidget {
                     fit: BoxFit.cover),
               ),
               child: this.getMyMawade3Screen(context)),
-          appBar: Utils.MyAppBar("ذوكصولوجية الأربعة حيوانات غير المتجسدة", 0.60),
+          appBar: Utils.MyAppBar("ذوكصولوجية الأربعة حيوانات غير المتجسدة", 0.60,context),
         ));
   }
 

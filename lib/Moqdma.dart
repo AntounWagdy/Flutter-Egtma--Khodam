@@ -14,7 +14,7 @@ class Moqdma extends StatelessWidget {
                     fit: BoxFit.cover),
               ),
               child: this.getMyMawade3Screen(context)),
-          appBar: Utils.MyAppBar("عن المؤتمر", 0),
+          appBar: Utils.MyAppBar("عن المؤتمر", 0,context),
         ));
   }
 
@@ -43,7 +43,7 @@ class Moqdma extends StatelessWidget {
                       style: TextStyle(
                           fontWeight: FontWeight.w700,
                           fontSize: 30.0,
-                      color: Colors.red),
+                      color: Utils.MyTextColor),
                     )),
                     Center(
                         child: Text(

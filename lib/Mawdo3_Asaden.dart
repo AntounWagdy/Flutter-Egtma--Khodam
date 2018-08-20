@@ -14,7 +14,7 @@ class Mawdo3_Asaden extends StatelessWidget {
                     fit: BoxFit.cover),
               ),
               child: this.getMyMawade3Screen(context)),
-          appBar: Utils.MyAppBar("مثل الأسدين",0),
+          appBar: Utils.MyAppBar("مثل الأسدين",0,context),
         ));
   }
 
@@ -142,7 +142,7 @@ class Mawdo3_Asaden extends StatelessWidget {
         text: malk,
         style: TextStyle(
             fontWeight: FontWeight.w300,
-            fontSize: 20.0,color: Colors.red,),
+            fontSize: 20.0,color: Utils.MyTextColor,),
         children: <TextSpan>[
          new TextSpan(text:s,style: TextStyle(
              fontWeight: FontWeight.w300,

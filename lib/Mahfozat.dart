@@ -23,7 +23,7 @@ class Mahfouzat extends StatelessWidget {
                     fit: BoxFit.cover),
               ),
               child: this.getMyMawade3Screen(context)),
-          appBar: Utils.MyAppBar(title, 0),
+          appBar: Utils.MyAppBar(title, 0,context),
         ));
   }
 

@@ -14,7 +14,7 @@ class Mawdo3_Nesreen extends StatelessWidget {
                     fit: BoxFit.cover),
               ),
               child: this.getMyMawade3Screen(context)),
-          appBar: Utils.MyAppBar("مثل النسرين", 0),
+          appBar: Utils.MyAppBar("مثل النسرين", 0,context),
         ));
   }
 
@@ -135,7 +135,7 @@ class Mawdo3_Nesreen extends StatelessWidget {
           style: TextStyle(
               fontWeight: FontWeight.w700,
               fontSize: 20.0,
-              color: Colors.red),
+              color: Utils.MyTextColor),
           children: <TextSpan>[
             TextSpan(
                 text: t,

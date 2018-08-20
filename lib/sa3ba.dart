@@ -20,7 +20,7 @@ class _Sa3baState extends State<Sa3ba> {
                     fit: BoxFit.cover),
               ),
               child: this.getMyMawade3Screen(context)),
-          appBar: Utils.MyAppBar("الكلمات الصعبة", 0),
+          appBar: Utils.MyAppBar("الكلمات الصعبة", 0,context),
         ));
   }
 
@@ -44,41 +44,49 @@ class _Sa3baState extends State<Sa3ba> {
           ),
           child: Padding(
             padding: const EdgeInsets.only(top: 40.0),
-            child: ListView(
+            child: Padding(
               padding: EdgeInsets.all(4.0),
-              children: <Widget>[
-                Center(
-                    child: Text(
-                  "الكلمات الصعبة",
-                  style: TextStyle(
-                      fontWeight: FontWeight.w700,
-                      fontSize: 30.0),
-                )),
-                TextField(
-                  onChanged: (s){
-                    setState(() {
-                      rr = s;
-                    });
-                  },
-                  maxLines: 1,
-                  textAlign: TextAlign.right,
-                  decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.grey.withOpacity(0.5),
-                      hintText: 'دور من هنا'),
-                ),
-                Container(height: 5.0,),
-                Table(
-                  columnWidths: const <int, TableColumnWidth>{
-                    0: FixedColumnWidth(100.0),
-                    1: FixedColumnWidth(70.0),
-                    2: FixedColumnWidth(170.0),
-                  },
-                  textDirection: TextDirection.rtl,
-                  border: TableBorder.all(color: Colors.black),
-                  children: MagicFunction(),
-                )
-              ],
+              child: Column(
+                children: <Widget>[
+                  Center(
+                      child: Text(
+                    "الكلمات الصعبة",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w700,
+                        fontSize: 30.0),
+                  )),
+                  TextField(
+                    onChanged: (s){
+                      setState(() {
+                        rr = s;
+                      });
+                    },
+                    maxLines: 1,
+                    textAlign: TextAlign.right,
+                    decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.grey.withOpacity(0.7),
+                        hintText: '...... دور من هنا',
+                      hintStyle: TextStyle(fontWeight: FontWeight.w700,color: Colors.black.withOpacity(0.5)),
+
+                    ),
+                  ),
+                  Container(height: 10.0,),
+                  Expanded(
+                    child: ListView(
+                      children: <Widget>[ Table(
+                        columnWidths: const <int, TableColumnWidth>{
+                          0: FixedColumnWidth(100.0),
+                          1: FixedColumnWidth(70.0),
+                          2: FixedColumnWidth(170.0),
+                        },
+                        textDirection: TextDirection.rtl,
+                        border: TableBorder.all(color: Colors.black),
+                        children: MagicFunction(),
+                      ),]),
+                  )
+                ],
+              ),
             ),
           ),
         ),

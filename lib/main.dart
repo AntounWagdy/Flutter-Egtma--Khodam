@@ -9,7 +9,7 @@ import 'dart:typed_data';
 
 
 void main(){
-  timeDilation =1.5;
+  //timeDilation =1.5;
   runApp(new MaterialApp(
     home: new SplashScreen(),
     debugShowCheckedModeBanner: false,

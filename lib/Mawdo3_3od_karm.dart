@@ -14,7 +14,7 @@ class Mawdo3_3od_karm extends StatelessWidget {
                     fit: BoxFit.cover),
               ),
               child: this.getMyMawade3Screen(context)),
-          appBar: Utils.MyAppBar("مثل عود الكرم",0),
+          appBar: Utils.MyAppBar("مثل عود الكرم",0,context),
         ));
   }
 
@@ -82,7 +82,7 @@ class Mawdo3_3od_karm extends StatelessWidget {
                 Container(height: 20.0,),
                 Text(Utils.Mawdo323,textAlign: TextAlign.center,style: TextStyle(
                   fontWeight: FontWeight.w700,
-                  fontSize: 25.0,color: Colors.red)),
+                  fontSize: 25.0,color: Utils.MyTextColor)),
               ],
             ),
           ),
@@ -127,7 +127,7 @@ class Mawdo3_3od_karm extends StatelessWidget {
   createRedBlackParagraph(String s, String t) {
     return new RichText(text: new TextSpan(text: s,style: TextStyle(
       fontWeight: FontWeight.w700,
-      fontSize: 20.0,color: Colors.red),children:<TextSpan>[TextSpan(text:t ,style:TextStyle(
+      fontSize: 20.0,color: Utils.MyTextColor),children:<TextSpan>[TextSpan(text:t ,style:TextStyle(
       fontWeight: FontWeight.w300,
       fontSize: 20.0,color: Colors.black) )]),textDirection: TextDirection.rtl,);
   }
