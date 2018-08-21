@@ -4,12 +4,9 @@ import 'MyApp.dart';
 import 'utils.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
 import 'package:flutter/services.dart';
-import 'Program.dart';
-import 'dart:typed_data';
 
 
 void main(){
-  //timeDilation =1.5;
   runApp(new MaterialApp(
     home: new SplashScreen(),
     debugShowCheckedModeBanner: false,
@@ -45,7 +42,6 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-
     // Only portrait
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp,

@@ -75,10 +75,10 @@ class _Sa3baState extends State<Sa3ba> {
                   Expanded(
                     child: ListView(
                       children: <Widget>[ Table(
-                        columnWidths: const <int, TableColumnWidth>{
-                          0: FixedColumnWidth(100.0),
-                          1: FixedColumnWidth(70.0),
-                          2: FixedColumnWidth(170.0),
+                        columnWidths: <int, TableColumnWidth>{
+                          0: FixedColumnWidth((100.0/360)*MediaQuery.of(context).size.width),
+                          1: FixedColumnWidth((70.0/360)*MediaQuery.of(context).size.width),
+                          2: FixedColumnWidth((170.0/360)*MediaQuery.of(context).size.width),
                         },
                         textDirection: TextDirection.rtl,
                         border: TableBorder.all(color: Colors.black),
