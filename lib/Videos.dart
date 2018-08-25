@@ -44,7 +44,7 @@ class _VideoState extends State<Videos> {
 
         if(text=="رؤيا العظام اليابسة"){
           youtube.playYoutubeVideoById(
-            apiKey: "AIzaSyABWU6ihkSSFKhG4ef6pl2s4DSDiP_I2O4",
+            apiKey: "<API KEY>",
             videoId: "-YsVzzay67c",
             autoPlay: true,
             fullScreen: true
@@ -52,7 +52,7 @@ class _VideoState extends State<Videos> {
         }
         else{
           youtube.playYoutubeVideoById(
-            apiKey: "AIzaSyABWU6ihkSSFKhG4ef6pl2s4DSDiP_I2O4",
+            apiKey: "<API KEY>",
             videoId: "EKh_U2NnIs8",
               autoPlay: true,
               fullScreen: true
@@ -133,7 +133,7 @@ class _VideoState extends State<Videos> {
 
   void playYoutubeVideo() {
     FlutterYoutube.playYoutubeVideoByUrl(
-      apiKey: "AIzaSyA3lV6KuEWbsD8YgkCGNMH87mlSL27GSx0",
+      apiKey: "<API KEY>",
       videoUrl: "https://www.youtube.com/watch?v=-YsVzzay67c",
     );
   }
@@ -141,7 +141,7 @@ class _VideoState extends State<Videos> {
   Youtube() {
     print("here");
     FlutterYoutube.playYoutubeVideoByUrl(
-        apiKey: "AIzaSyA3lV6KuEWbsD8YgkCGNMH87mlSL27GSx0",
+        apiKey: "<API KEY>",
         videoUrl: "https://www.youtube.com/watch?v=-YsVzzay67c",
         autoPlay: true, //default falase
         fullScreen: true //default false
